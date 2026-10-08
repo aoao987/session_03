@@ -7,6 +7,14 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function multiplicationRow(n) {
+   const result = [];
+
+  for (let i = 1; i <= 10; i++) {
+    result.push(n * i);
+  }
+
+  return result;
+
   // your code here
 }
 
