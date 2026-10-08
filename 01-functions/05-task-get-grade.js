@@ -7,6 +7,9 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function getGrade(score) {
+  if (score >= 90) {
+    return "A";
+  } 
   // your code here
 }
 

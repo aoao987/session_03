@@ -7,6 +7,7 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function sayHello(name) {
+return `Hello, ${name}!`;
   // your code here
 }
 
