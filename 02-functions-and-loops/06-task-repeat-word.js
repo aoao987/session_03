@@ -7,6 +7,7 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function repeatWord(word, times) {
+   return word.repeat(times);
   // your code here
 }
 
