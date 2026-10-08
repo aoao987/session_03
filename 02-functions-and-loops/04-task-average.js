@@ -6,7 +6,13 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function average(numbers) {
-  // your code here
+  let sum = 0;
+
+  for (const number of numbers) {
+    sum += number;
+  }
+
+  return sum / numbers.length;
 }
 
 // ----- Checks (do not edit) -----
