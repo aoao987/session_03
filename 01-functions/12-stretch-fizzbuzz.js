@@ -11,7 +11,17 @@
 
 function fizzBuzz(n) {
   // your code here
+   if (n % 3 === 0 && n % 5 === 0) {
+    return "FizzBuzz";
+  } else if (n % 3 === 0) {
+    return "Fizz";
+  } else if (n % 5 === 0) {
+    return "Buzz";
+  } else {
+    return `${n}`;
+  }
 }
+
 
 // ----- Checks (do not edit) -----
 check("fizzBuzz(15)", () => fizzBuzz(15), "FizzBuzz");
