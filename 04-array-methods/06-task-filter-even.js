@@ -7,6 +7,7 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function onlyEven(numbers) {
+   return numbers.filter(number => number % 2 === 0);
   // your code here
 }
 
