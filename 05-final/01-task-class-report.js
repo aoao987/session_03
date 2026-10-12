@@ -20,22 +20,35 @@ const students = [
 ];
 
 function getAverage(students) {
+  const total = students.reduce((sum, student) => sum + student.score, 0);
+  return total / students.length;
   // your code here
 }
 
 function getTopStudent(students) {
+    const topStudent = students.reduce((top, student) =>
+    student.score > top.score ? student : top
+      );
+
+  return topStudent.name;
   // your code here
 }
 
 function getPassedNames(students) {
+   return students
+    .filter((student) => student.score >= 60)
+    .map((student) => student.name);
+
   // your code here
 }
 
 function reportLine(student) {
+  return `${student.name}: ${student.score}`;
   // your code here
 }
 
 function report(students) {
+   return students.map((student) => reportLine(student));
   // your code here
 }
 
