@@ -14,6 +14,9 @@ const products = [
 ];
 
 function inStockNames(products) {
+  return products
+    .filter(product => product.inStock)
+    .map(product => product.name);
   // your code here
 }
 
