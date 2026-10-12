@@ -14,6 +14,7 @@ const students = [
 ];
 
 function passedStudents(students) {
+  return students.filter(student => student.score >= 60);
   // your code here
 }
 
