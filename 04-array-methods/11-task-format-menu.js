@@ -15,6 +15,7 @@ const menu = [
 ];
 
 function formatMenu(menu) {
+   return menu.map(item => `${item.name} — ${item.price} baisa`);
   // your code here
 }
 
