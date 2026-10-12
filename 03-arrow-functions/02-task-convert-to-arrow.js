@@ -16,7 +16,11 @@
 // your code here
 
 // your code here
+const triple = (n) => n * 3;
 
+const isPositive = (n) => n > 0;
+
+const fullName = (first, last) => `${first} ${last}`;
 // ----- Checks (do not edit) -----
 check("triple(4)", () => triple(4), 12);
 check("isPositive(5)", () => isPositive(5), true);
