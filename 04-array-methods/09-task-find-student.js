@@ -15,6 +15,7 @@ const students = [
 ];
 
 function findStudent(students, name) {
+  return students.find(student => student.name === name);
   // your code here
 }
 
