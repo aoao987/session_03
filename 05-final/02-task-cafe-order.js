@@ -16,18 +16,29 @@ const order = [
 ];
 
 function lineTotal(item) {
+   return item.price * item.quantity;
   // your code here
 }
 
 function subtotal(order) {
+   return order.reduce((sum, item) => sum + lineTotal(item), 0);
   // your code here
 }
 
 function discount(amount) {
+    if (amount >= 5000) {
+    return amount * 0.10;
+  }
+
+  return 0;
+
   // your code here
 }
 
 function finalTotal(order) {
+   const amount = subtotal(order);
+  return amount - discount(amount);
+
   // your code here
 }
 
