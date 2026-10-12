@@ -7,6 +7,7 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function doubleAll(numbers) {
+    return numbers.map((number) => number * 2);
   // your code here
 }
 
