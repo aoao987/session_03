@@ -16,7 +16,13 @@
 // your code here
 
 // your code here
+const square = (n) => n * n;
 
+const toBaisa = (omr) => omr * 1000;
+
+const welcome = (city) => `Welcome to ${city}!`;
+
+const isHot = (temp) => temp >= 40;
 // ----- Checks (do not edit) -----
 check("square(6)", () => square(6), 36);
 check("toBaisa(2.5)", () => toBaisa(2.5), 2500);
