@@ -7,6 +7,7 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function pricesToOMR(prices) {
+   return prices.map((price) => price / 1000);
   // your code here
 }
 
