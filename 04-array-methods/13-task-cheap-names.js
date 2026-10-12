@@ -16,6 +16,9 @@ const menu = [
 ];
 
 function cheapNames(menu, maxPrice) {
+   return menu
+    .filter(item => item.price <= maxPrice)
+    .map(item => item.name);
   // your code here
 }
 
