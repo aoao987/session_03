@@ -8,10 +8,12 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function hasFailed(scores) {
+   return scores.some(score => score < 60);
   // your code here
 }
 
 function allPassed(scores) {
+  return scores.every(score => score >= 60);
   // your code here
 }
 
