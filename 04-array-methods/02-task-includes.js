@@ -7,8 +7,10 @@
 // The checks at the bottom print ✅ when your function is correct.
 
 function hasCity(cities, city) {
-  // your code here
+    return cities.includes(city);
 }
+  // your code here
+
 
 // ----- Checks (do not edit) -----
 check("hasCity([\"Muscat\", \"Sur\"], \"Sur\")", () => hasCity(["Muscat", "Sur"], "Sur"), true);
