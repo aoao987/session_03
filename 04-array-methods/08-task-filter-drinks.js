@@ -15,6 +15,7 @@ const menu = [
 ];
 
 function getByCategory(menu, category) {
+  return menu.filter(item => item.category === category);
   // your code here
 }
 
